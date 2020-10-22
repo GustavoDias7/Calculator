@@ -5,53 +5,70 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button {
-    width: 4rem;
-    height: 2rem;
-    border: 1px solid #616161;
-    border-radius: 3px;
-    outline: 0;
+section {
+    width: min-content;
+    margin: auto;
+    margin-top: 60px;
 }
 
-.empty {
-    width: 4rem;
-    height: 2rem;
+button {
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background-color: #273446;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #e4e4e4;
 }
 
 button:hover {
-    background-color: #e4e4e4;
+    background-color: #2a3a4e;
+    color: #c4c4c4;
     cursor: pointer;
 }
 
+.empty {
+    width: 3rem;
+    height: 3rem;
+}
+
 .content {
-    border: 2px solid grey;
-    width: 300px;
+    border: 2px solid white;
+    background-color: #374353;
+    border-radius: 8px;
+    width: 250px;
     height: auto;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
 }
 
 .display {
     width: 12rem;
     height: min-content;
-    border: 2px solid grey;
-    margin: .5rem auto .8rem;
+    border: 2px solid #515d6b;
+    border-radius: 8px;
+    color: #c4c4c4; 
+    background-color: #3f4853;
+    margin: 1rem auto 1rem;
 }
 
-/* .input-display, */
 .output-display {
     width: 100%;
     height: 2rem;
     border: none;
+    border-radius: 8px;
     text-align: end;
-    padding-top: .5rem;
-    padding-right: .5rem;
+    padding: .3rem .5rem 0;
     outline: 0;
     font-size: 16px;
+    color: #c4c4c4;
 }
 
 #calculation {
     cursor: default;
     pointer-events: none;
+    background: none;
 }
 
 .all-buttons {
@@ -62,15 +79,15 @@ button:hover {
 .input {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: .2rem;
+    column-gap: .4rem;
     margin: 0;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: .2rem;
-    row-gap: .2rem;
+    column-gap: .4rem;
+    row-gap: .4rem;
     width: min-content;
     height: min-content;
 }
@@ -78,8 +95,8 @@ button:hover {
 .side-buttons {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: .2rem;
-    row-gap: .2rem;
+    column-gap: .4rem;
+    row-gap: .4rem;
     width: min-content;
     height: min-content;
 }
