@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid #616161;
+    border-radius: 3px;
+    outline: 0;
+}
+
+.empty {
+    width: 4rem;
+    height: 2rem;
+}
+
+button:hover {
+    background-color: #e4e4e4;
+    cursor: pointer;
+}
+
+.content {
+    border: 2px solid grey;
+    width: 300px;
+    height: auto;
+    padding-bottom: 20px; 
+}
+
+.display {
+    width: 12rem;
+    height: min-content;
+    border: 2px solid grey;
+    margin: .5rem auto .8rem;
+}
+
+/* .input-display, */
+.output-display {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    text-align: end;
+    padding-top: .5rem;
+    padding-right: .5rem;
+    outline: 0;
+    font-size: 16px;
+}
+
+#calculation {
+    cursor: default;
+    pointer-events: none;
+}
+
+.all-buttons {
+    width: min-content;
+    margin: 0 auto;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: .2rem;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: .2rem;
+    row-gap: .2rem;
+    width: min-content;
+    height: min-content;
+}
+
+.side-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: .2rem;
+    row-gap: .2rem;
+    width: min-content;
+    height: min-content;
+}
