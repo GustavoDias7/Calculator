@@ -5,6 +5,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: rgb(30, 35, 44);
+}
+
+h1 {
+    color: #e4e4e4;
+}
+
 section {
     position: absolute;
     bottom: 0;
@@ -40,7 +48,7 @@ button:hover {
 }
 
 .content {
-    border: 2px solid white;
+    border: 2px solid #374353;
     background-color: #374353;
     border-radius: 8px;
     width: 250px;
